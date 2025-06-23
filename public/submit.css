@@ -1,0 +1,145 @@
+.shrink {
+  max-width: 600px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #cee3f8;
+  div {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 5px;
+  }
+  strong {
+    font-weight: normal;
+  }
+  textarea {
+    height: 60px;
+  }
+  span[data-val="0"] {
+    color: #888;
+  }
+  span[data-val="1"] {
+    color: #ccb535;
+  }
+}
+
+.red, span[data-val="2"] {
+  color: red;
+}
+
+.textsec div {
+  display: flex;
+  span {
+    display: inline-block;
+  }
+  .text-title {
+    flex-grow: 1;
+  }
+}
+.gray {
+  color: #888;
+}
+
+h1 {
+  display: block;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.note, .error {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.note {
+  background-color: #f6e69f;
+  border: 1px solid #ffa500;
+}
+
+.error {
+  background-color: #d33739;
+  border: 1px solid #c03032;
+  color: white;
+}
+
+.reminder {
+  border: 1px solid #91bbe1;
+  border-radius: 4px;
+  background-color: #e4f2fb;
+  padding: 10px;
+  font-size: 14px;
+  a {
+    color: #369;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #47a;
+  }
+}
+
+.choice {
+  .bar {
+    background-color: #79b;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 12px;
+  }
+  a[data-select="1"] {
+    background-color: #79b;
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+  a[data-select="0"] {
+    background-color: #f2f5fa;
+    border: 1px solid #999;
+    border-bottom: none;
+    color: #258;
+    padding: 1px 6px;
+  }
+}
+
+.leftmargin {
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media (max-width: 750px) {
+  .shrink {
+    max-width: 90%;
+  }
+  .choice {
+    a[data-select="1"] {
+      font-size: 30px;
+    padding: 5px 14px;
+    }
+    a[data-select="0"] {
+      padding: 3px 10px;
+      font-size: 20px;
+    }
+  }
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+  }
+  .leftmargin {
+    margin-bottom: 0;
+  }
+}

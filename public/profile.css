@@ -1,0 +1,202 @@
+section {
+  flex-grow: 1;
+}
+
+.top-menu {
+  padding: 10px 0;
+  margin-left: 10px;
+  border-bottom: 1px dotted black;
+  form {
+    display: inline;
+  }
+}
+
+.menu-margin {
+  margin-left: 15px;
+}
+
+.dropdown {
+  display: inline;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  span {
+    text-decoration: underline;
+  }
+  img {
+    margin: 0 0 2px 5px;
+  }
+}
+
+.parent-post {
+  margin: 5px auto -10px 10px;
+  span {
+    font-size: 12px;
+  }
+}
+
+.parent-post span a, .side p span {
+  font-weight: bold;
+}
+
+.side {
+  width: 300px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  h2 {
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  p {
+    margin: 2px auto;
+    span {
+        font-size: 20px;
+    }
+  }
+  form {
+    border-top: 1px dotted #888;
+    border-bottom: 1px dotted #888;
+    padding: 8px 0;
+    margin: 5px 0;
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      height: 80px;
+    }
+    button {
+      margin-right: 4px;
+    }
+  }
+  a {
+    cursor: pointer;
+    color: #888;
+    font-size: 14px;
+    img {
+      margin-right: 4px;
+      position: relative;
+      top: 2px; 
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+div .desc form div {
+  display: flex;
+  span {
+    flex-grow: 1;
+    text-align: right;
+  }
+  span[data-val="0"] {
+    color: #000;
+  }
+  span[data-val="1"] {
+    color: #ccb535;
+  }
+  span[data-val="2"] {
+    color: red;
+  }
+}
+
+.joined {
+  text-align: right;
+  color: #888;
+}
+
+.wiki-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0;
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+  .wiki-parent {
+    width: 500px;
+    max-width: 90%;
+  }
+}
+
+.wiki-entry {
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  border-top: 1px dotted #888;
+  padding: 8px 0;
+  margin: auto;
+  div {
+    font-size: 22px;
+    flex-grow: 1;
+  }
+  span {
+    cursor: pointer;
+    color: #369;
+  }
+  span:hover {
+    text-decoration: underline;
+  }
+  span:active {
+    color: red;
+  }
+}
+
+.wiki-results {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  border: 1px solid gray;
+  background-color: #fff;
+  a {
+    display: block;
+    padding: 2px 3px 1px 3px;
+    color: #369;
+  }
+  a:hover {
+    background-color: #c7def7;
+  }
+}
+
+@media (max-width: 750px) {
+  .side {
+    width: auto;
+    margin: 20px 0;
+    padding: 25px;
+    a {
+      line-height: 40px;
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    p span {
+      font-size: 28px;
+    }
+  }
+  .side p, .desc {
+    font-size: 20px;
+  }
+  div .desc form {
+    textarea, div {
+      font-size: 20px;
+    }
+    button {
+      font-size: 24px;
+      padding: 5px 10px;
+      margin: 10px 15px 0 0;
+    }
+  }
+  .wiki-list {
+    max-width: 90%;
+  }
+  .wiki-results {
+    top: 234px;
+  }
+}
